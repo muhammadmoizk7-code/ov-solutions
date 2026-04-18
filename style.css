@@ -1,0 +1,299 @@
+body{
+margin:0;
+font-family:Segoe UI;
+background:#05070f;
+color:white;
+}
+
+/* NAV */
+.nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:#0f172a;
+border-bottom:1px solid #1e293b;
+}
+
+.nav a{
+color:#94a3b8;
+margin-left:15px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav a:hover{
+color:#38bdf8;
+}
+
+nav a i{
+margin-right:6px;
+}
+
+/* HERO */
+.hero{
+display:flex;
+justify-content:space-between;
+padding:80px 60px;
+gap:40px;
+}
+
+.hero-left,.hero-right{
+width:48%;
+}
+
+/* BADGE */
+.badge{
+padding:6px 12px;
+border:1px solid #38bdf8;
+border-radius:20px;
+display:inline-block;
+color:#38bdf8;
+}
+
+/* BUTTONS */
+.buttons a{
+padding:10px 15px;
+margin-right:10px;
+border-radius:8px;
+display:inline-block;
+text-decoration:none;
+transition:0.3s;
+}
+
+.primary{
+background:#38bdf8;
+color:black;
+}
+
+.ghost{
+border:1px solid #38bdf8;
+color:#38bdf8;
+}
+
+.buttons a:hover{
+transform:translateY(-2px);
+}
+
+/* CARDS */
+.card{
+background:#0f172a;
+padding:20px;
+margin:10px;
+border-radius:10px;
+border:1px solid #1e293b;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+border-color:#38bdf8;
+}
+
+/* SECTIONS */
+.demo,.stats,.contact,.page{
+padding:60px;
+}
+
+/* BANK SECTION (CLEANED - ONLY ONE VERSION) */
+.banks{
+text-align:center;
+padding:40px 20px;
+}
+
+.bank-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-top:15px;
+}
+
+.bank-list span{
+background:rgba(56,189,248,0.08);
+border:1px solid rgba(56,189,248,0.25);
+padding:6px 14px;
+border-radius:20px;
+font-size:12px;
+color:#94a3b8;
+transition:0.3s;
+cursor:pointer;
+}
+
+.bank-list span:hover{
+color:#38bdf8;
+border-color:#38bdf8;
+transform:scale(1.05);
+}
+
+/* CONTACT PAGE */
+.contact-page{
+padding:60px;
+max-width:600px;
+margin:auto;
+text-align:left;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #1e293b;
+background:#0f172a;
+color:white;
+outline:none;
+}
+
+.contact-info{
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.contact-info a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
+}
+
+/* LOGO */
+.logo span{
+color:#38bdf8;
+}
+
+/* QUICK SERVICES PREMIUM GRID FIX */
+.service-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:15px;
+}
+
+.service-card{
+background:rgba(255,255,255,0.04);
+border:1px solid #1e293b;
+padding:12px 14px;
+border-radius:10px;
+display:flex;
+align-items:center;
+gap:10px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.service-card i{
+color:#38bdf8;
+width:22px;
+text-align:center;
+}
+
+.service-card span{
+font-size:13px;
+color:#cbd5e1;
+}
+
+.service-card:hover{
+transform:translateY(-3px);
+border-color:#38bdf8;
+background:rgba(56,189,248,0.05);
+}
+
+
+@media (max-width:768px){
+
+.nav{
+flex-wrap:wrap;
+padding:15px 20px;
+gap:10px;
+}
+
+.nav a{
+font-size:14px;
+margin-left:10px;
+display:flex;
+align-items:center;
+gap:5px;
+}
+
+.hero{
+flex-direction:column;
+padding:40px 20px;
+}
+
+.hero-left,.hero-right{
+width:100%;
+}
+
+.buttons a{
+display:block;
+margin-bottom:10px;
+text-align:center;
+}
+
+.bank-list{
+gap:6px;
+}
+
+.bank-list span{
+font-size:11px;
+padding:5px 10px;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+/* BIG PREMIUM SEND BUTTON */
+.send-btn{
+padding:14px 22px;
+font-size:16px;
+border-radius:10px;
+background:#38bdf8;
+color:black;
+border:none;
+cursor:pointer;
+transition:0.3s;
+font-weight:600;
+margin-top:10px;
+width:100%;
+}
+
+.send-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(56,189,248,0.25);
+}
+
+
+.contact-send-btn{
+width:100%;
+padding:16px;
+font-size:16px;
+font-weight:600;
+border-radius:10px;
+background:#38bdf8;
+color:black;
+border:none;
+cursor:pointer;
+transition:0.3s;
+margin-top:10px;
+}
+
+.contact-send-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(56,189,248,0.35);
+}
